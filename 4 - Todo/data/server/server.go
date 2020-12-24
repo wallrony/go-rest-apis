@@ -12,8 +12,7 @@ import (
 )
 
 type reqBody struct {
-	Query    string `json:"query"`
-	Mutation string `json:"mutation"`
+	Query string `json:"query"`
 }
 
 // Instance type struct - serves to maintain graphql

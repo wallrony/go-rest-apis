@@ -32,6 +32,15 @@ Projetos e suas características:
     colocadas no arquivo .env.example para definir os valores no arquivo .env
     para utilizar de forma correta.
   </li>
+  <li>
+    5 - Products: É um projeto que é um pouco mais complexo, pois utiliza
+    persistência de dados (banco de dados) PostgreSQL e GraphQL, contendo módulo
+    de autenticação, junto de um CRUD disponível tanto para manipulação de usuários
+    quanto para produtos. Também conta com  o uso de práticas de organização de
+    código e Design Patterns para melhor compreensão e organização de toda a
+    estrutura disponível. Veja as variáveis colocadas no arquivo .env.example
+    para definir os valores no arquivo .env para utilizar de forma correta.
+  </li>
 </ul>
 
 Logo mais terão mais projetos (provavelmente mais complexos e mais elaborados) e

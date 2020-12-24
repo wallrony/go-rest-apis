@@ -1,0 +1,17 @@
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(40) NOT NULL,
+  email VARCHAR(40) UNIQUE,
+  password VARCHAR(60) NOT NULL,
+  is_active BOOLEAN NOT NULL
+);
+
+CREATE TABLE products (
+  id SERIAL PRIMARY KEY,
+  user_id SERIAL NOT NULL,
+  name VARCHAR(40) NOT NULL,
+  description TEXT NOT NULL,
+  price DECIMAL NOT NULL,
+  quantity INTEGER NOT NULL,
+  CONSTRAINT user_fk FOREIGN KEY(user_id) REFERENCES users(id)
+);
